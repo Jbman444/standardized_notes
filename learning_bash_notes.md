@@ -2,7 +2,7 @@
 
 
 ### Source of Notes and Link 
-
+[w3schools](https://www.w3schools.com/bash/bash_alias.php)
 
 ### check the version 
 
