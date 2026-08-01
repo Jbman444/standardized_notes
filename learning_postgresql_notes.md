@@ -111,6 +111,45 @@ with a column of integers followed by
     ⁃    gender column of characters limited to 6
     ⁃    date_of_birth where the data type is time stamp ( includes hour and minute)
 
+### Another example 
+
+```postgresql
+
+CREATE TABLE Employees (
+    EmployeeiD INT PRIMARY KEY,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) UNIQUE,
+    HireDate DATE DEFAULT CURRENT_DATE, 
+    -- if HireDate is blank, blank is replaced by current date with the following format (YYYY-MM-DD)
+)
+```
+
+### inserting specific dates instead of current
+
+```postgresql
+HireDate DATE DEFAULT DATE_TRUNC('month',CURRENT_DATE) -- function
+
+-- Note: This will automatically insert the first day of the month for that given data
+```
+
+
+### How to add comments to sql commmands
+
+```postgresql
+
+-- This is how you make a single comment
+-- you can add this comment above or below a given command
+-- can be added on the same line as the command
+
+/*
+This can be done to comments out mutiple lines
+so that you don't have to add dashes to mutiple linese
+*/
+
+```
+
+
 list of data types available
 [link](https://www.postgresql.org/docs/current/datatype.html)
 
@@ -118,7 +157,7 @@ PAUSE ON VIDEO 44 MINUTES
 
 ```postgresql
 
-\c test
+\c test -- connecting to database called test
 CREATE TABLE person (
 id INT,
 first_name VARCHAR(50),
