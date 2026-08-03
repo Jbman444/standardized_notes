@@ -119,3 +119,17 @@ jorge@jorge:~/Documents/modflow6-examples$ pixi install
 cd scripts
 pixi run get-modflow .
 ```
+
+
+# Goal handwrite the following tutorial example
+
+[flopy Tutorial](https://youtu.be/xDgWjArrHNY?si=qMP7sW7MTDzzvqlp)
+
+setup the environment
+document how you did that 
+write everything by hand
+run it 
+modify it
+and then go back to reviewing flopy example repo
+
+go back up to line 45
