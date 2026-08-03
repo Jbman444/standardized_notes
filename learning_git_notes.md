@@ -1,5 +1,9 @@
 # Learning Git
 
+
+
+## Remember to finish game and add notes to this document
+
 [Git Branching Game](https://learngitbranching.js.org/)
 
 
